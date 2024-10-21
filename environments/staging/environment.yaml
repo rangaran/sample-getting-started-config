@@ -5,7 +5,10 @@ version: 1.0
 app:
   # build id to deploy. if 'version' is commented out, the application is not deployed
   version: ""
-  
+
+  # configure endpoints
+  endpoints: public
+
   # number of instances
   instances:
     # min number of instances. can be 0 for scale to 0. default to 1.
@@ -27,9 +30,3 @@ app:
   variables:
     - name: io_openliberty_sample_system_inMaintenance
       value: "false"
-      
-  # observability:
-  #  cloudwatch:   
-  #    arn: arn:aws:logs:region:account-id:destination:destination_name
-  #    logGroup: myLogGroup
-  #    region: us-east-1
