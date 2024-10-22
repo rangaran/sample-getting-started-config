@@ -6,9 +6,6 @@ app:
   # build id to deploy. if 'version' is commented out, the application is not deployed
   version: ""
 
-  # configure endpoints
-  endpoints: public
-
   # number of instances
   instances:
     # min number of instances. can be 0 for scale to 0. default to 1.
